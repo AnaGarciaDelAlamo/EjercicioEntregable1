@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: pink;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #seccion1{
+        margin-left: 5px;
+        border: black 1px solid;
+    }
+
+    #seccion2{
+        margin-left: 5px;
+        margin-bottom: 50px;
+        border-bottom: black 1px solid;
+    }
+    #seccion1 img {
+        width: 210px;
+    }
+
+    #seccion2 img {
+        width: 310px;
+    }
+
+    #seccion3 img {
+        display: none;
+    }
+    #contenedorPrincipal {
+        display: flex;
+    }
+
+    ul{
+        width: 25%;
+        margin-left: 5px;
+        border: black 1px solid;
+    }
+
+    .articulos{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+
+    }
+
+    .articulos article{
+        width: 20%;
+        justify-content: center;
+    }
+
+    .divs{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .div3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    button{
+        width: 100px;
+    }
+
+    li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .link2{
+       bottom: 0;
+        position: absolute;
+    }
+
+    .link1{
+        border: black 1px solid;
+    }
+
+
+
+
+
+
+
+
+
+}
+/*@media only screen and (min-width: 1024px) {
+    .separador {
+        display: none;
+    }
+
+    #navegacionDesktop{
+        display: none;
+    }
+
+
+    #seccion3{
+        display:none;
+    }
+
+    #menuH2{
+        text-transform: uppercase;
+        width: 100%;
+        align-items: start;
+
+    }
+
+
+    #navegacion{
+        display:none;
+    }
+
+
+    #contenedorPrincipal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #contenedorPrincipal > main{
+        width: calc(85% - 20px);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #contenedorPrincipal >main > section {
+        margin-bottom: 20px;
+    }
+
+    #contenedorPrincipal > main > section > h2{
+       align-items: center;
+    }
+
+    #contenedorPrincipal > ul{
+        width: calc(15% - 20px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none;
+        gap: 30px;
+        border-bottom: 1px solid black;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #contenedorPrincipal > ul > li > a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #seccion1, #seccion2 {
+        width: 100%;
+    }
+
+    #seccion1{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    #seccion2{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        margin-top: 200px;
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #seccion1-1{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #seccion1-2{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #seccion1-3{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .desktop > button{
+        width: 75%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        text-transform: uppercase;
+        gap: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .desktop{
+        display: none;
+    }
+    #navegacionDesktop{
+        display: none;
+    }
+
+    #seccion2 > h2{
+        display: none;
+    }
+
+    #menuH2{
+        display: none;
+    }
+
+    ul{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border-bottom: 1px solid black;
+    }
+
+    li a{
+        text-decoration: none;
+    }
+
+    main{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+        gap:30px;
+        padding-bottom: 200px;
+    }
+
+    #seccion1{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    #seccion2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    #seccion3{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        gap:10px;
+    }
+
+    section > h2{
+        text-transform: capitalize;
+    }
+
+    .img-div{
+        height: 50%;
+        align-self: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    section p{
+        text-align: center;
+    }
+
+    #seccion-2 h4{
+        width: 100%;
+        text-align: center;
+    }
+
+    #seccion-3 h4{
+        width: 100%;
+        text-align: end;
+    }
+
+    #navegacion{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 80px;
+        background-color: pink;
+        border: 7px solid black;
+        align-items: center;
+    }
+}*/
