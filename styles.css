@@ -98,247 +98,125 @@ header{
     .link1{
         border: black 1px solid;
     }
-
-
-
-
-
-
-
-
-
 }
-/*@media only screen and (min-width: 1024px) {
-    .separador {
+
+@media only screen and (max-width: 1023px) {
+
+    #seccion2{
         display: none;
     }
+    #menu {
+        text-align: center;
+    }
 
-    #navegacionDesktop{
-        display: none;
+    #menu h1 {
+        font-size: 20px;
     }
 
 
-    #seccion3{
-        display:none;
-    }
-
-    #menuH2{
-        text-transform: uppercase;
+    ul {
         width: 100%;
-        align-items: start;
-
-    }
-
-
-    #navegacion{
-        display:none;
-    }
-
-
-    #contenedorPrincipal{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #contenedorPrincipal > main{
-        width: calc(85% - 20px);
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    #contenedorPrincipal >main > section {
-        margin-bottom: 20px;
-    }
-
-    #contenedorPrincipal > main > section > h2{
-       align-items: center;
-    }
-
-    #contenedorPrincipal > ul{
-        width: calc(15% - 20px);
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        margin: 10px 0;
         list-style: none;
-        gap: 30px;
-        border-bottom: 1px solid black;
-        margin-left: 20px;
-        margin-bottom: 20px;
     }
 
-    #contenedorPrincipal > ul > li > a{
+    #enlaces li a{
         text-decoration: none;
         color: black;
+
     }
 
-    #seccion1, #seccion2 {
-        width: 100%;
-    }
 
-    #seccion1{
-        height: 200px;
+    .link1{
         display: flex;
         flex-direction: column;
-        gap:10px;
+        margin-bottom: 10px;
     }
 
-    #seccion2{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-        margin-top: 200px;
-    }
-
-    .desktop{
+    #enlaces{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+
     }
 
-    #seccion1-1{
-        width: 100%;
-        height: 50%;
+    .link1 h2{
+        font-size: 18px;
+    }
+
+    .link2 {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 999;
+        border: 5px solid black;
+        background-color: pink;
+        width: 40px;
+        margin-bottom: 10px;
+
     }
 
-    #seccion1-2{
+    .articulos {
+        flex-direction: column;
+    }
+
+    .articulo1 {
         width: 100%;
-        height: 50%;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
-    #seccion1-3{
+    .articulo2{
         width: 100%;
-        height: 50%;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: flex-end;
+        margin-right: 50px;
     }
 
-    .desktop > button{
-        width: 75%;
-        height: 25px;
-        background-color: white;
-        border: 1px solid black;
-        text-transform: uppercase;
-        gap: 20px;
+    .articulo1 img {
+        width: 95%;
+        height: 100px;
+    }
+
+    .articulo2 img{
+        width:50%;
+        height: 100px;
+    }
+
+    .articulo3 img{
+        width: 50%;
+        height: 100px;
+
+    }
+
+    .articulo1 p{
+        text-align: center;
+    }
+
+    .articulo2 p{
+        text-align: right;
+        width: 50%;
+
+    }
+
+    .articulo3 p{
+        text-align: left;
+        width: 50%;
+    }
+
+
+    #seccion1 {
+        display: block;
+    }
+
+    #seccion2 {
+        display: none;
     }
 }
-
-
-@media only screen and (max-width: 767px) {
-    .desktop{
-        display: none;
-    }
-    #navegacionDesktop{
-        display: none;
-    }
-
-    #seccion2 > h2{
-        display: none;
-    }
-
-    #menuH2{
-        display: none;
-    }
-
-    ul{
-        width: 100%;
-        height: 30px;
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        border-bottom: 1px solid black;
-    }
-
-    li a{
-        text-decoration: none;
-    }
-
-    main{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 20px;
-        gap:30px;
-        padding-bottom: 200px;
-    }
-
-    #seccion1{
-        width: 100%;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-    }
-
-    #seccion2{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-    }
-
-    #seccion3{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        gap:10px;
-    }
-
-    section > h2{
-        text-transform: capitalize;
-    }
-
-    .img-div{
-        height: 50%;
-        align-self: center;
-    }
-
-    img{
-        width: 100%;
-    }
-
-    section p{
-        text-align: center;
-    }
-
-    #seccion-2 h4{
-        width: 100%;
-        text-align: center;
-    }
-
-    #seccion-3 h4{
-        width: 100%;
-        text-align: end;
-    }
-
-    #navegacion{
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        height: 150px;
-        width: 80px;
-        background-color: pink;
-        border: 7px solid black;
-        align-items: center;
-    }
-}*/
